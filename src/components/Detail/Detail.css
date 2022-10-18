@@ -1,0 +1,113 @@
+.section1{padding-top: 150px;}
+.container1{max-width: 1120px; width: 100%;}
+.heading h1{font-size: 26px !important;}
+.maldives{justify-content: space-between;text-decoration: underline;}
+.maldives1{color: #000;}
+.share1{color: #000;}
+.save{color: #000;}
+
+/* section 2 */
+.container2{max-width: 1120px; width: 100%;}
+.section2{max-width: 1120px; width: 100%;}
+.section2-img{gap: 5px; cursor: pointer !important;}
+/* section 2 */
+
+/* section 3 */
+.dome h1{font-size: 22px !important;}
+.dome{padding-top: 48px;padding-bottom: 24px;}
+
+/* section 3 */
+
+/* section4 */
+.dive-experience{padding-top: 32px;padding-bottom: 32px;}
+.section4{margin-bottom: 24px;}
+.dive{margin-left: 16px;}
+.dive h4{font-size: 16px;margin-bottom: 4px;}
+.dive p{font-size: 14px;}
+.aircover{margin-bottom: 32px;}
+.aircover img{margin-bottom: 20px;}
+.aircover a{color: #000;text-decoration: underline !important;font-weight: bold;}
+/* section4 */
+
+/* paragraph section */
+.paragraph{padding-top: 32px;padding-bottom: 48px;}
+/* paragraph section */
+
+/* Bedroom section */
+.bedroom h2{font-size: 22px;padding-bottom: 20px;}
+.maindiv{border: 1px solid black;border-radius: 12px; padding: 10px;max-width: 207px;width: 100%;}
+
+.bedicon { padding-top: 27px;padding-left: 33px;}
+.bedroom p{font-size: 16px;padding-left: 33px;font-weight: 400;}
+.bedroom h6{padding-top: 10px;font-weight: 400;padding-left: 33px;}
+/* Bedroom section */
+
+/* aminities section */
+.heading{padding-bottom: 24px;}
+.main-section{padding-top: 48px;padding-bottom: 48px;}
+.wifi-section{width: 344px;padding-bottom: 16px;}
+.tv-section{width: 344px;padding-bottom: 16px;}
+.hair-section{width: 344px;padding-bottom: 16px;}
+.long-section{width: 344px;padding-bottom: 16px;}
+.pool-section{padding-bottom: 16px;}
+.air-section{padding-bottom: 16px;}
+.breakfast-section{padding-bottom: 16px;}
+.wifi-logo {margin-right: 16px;}
+.tv-logo {margin-right: 16px;}
+.hair-logo {margin-right: 16px;}
+.long-logo {margin-right: 16px;}
+.pool-logo {margin-right: 16px;}
+.air-logo {margin-right: 16px;}
+.breakfast-logo {margin-right: 16px;}
+/* aminities section */
+.button {padding-top: 20px;padding-bottom: 20px;}
+.button button{padding: 13px 23px;border: 2px solid black;
+    border-radius: 12px;background: white;}
+    /* calender section */
+
+    .main-calendar{
+        padding-bottom: 48px;
+        /* padding-top: 48px; */
+    }
+
+    .calendar-section1{
+        padding-bottom: 20px;
+    }
+    /* calender section */
+    
+    /* calender section */
+
+
+    /* review section */
+    
+    .review-detail{padding-bottom: 48px;}
+    .icon{margin-right: 16px;}
+    .detail-para a{font-weight: bold;text-decoration: underline !important;}
+    .detail1 i{font-size: 24px;}
+    .detail2 i{font-size: 24px;}
+    
+    .review-heading{padding-bottom: 32px;}
+    /* review section */
+
+    /* iframe section */
+    .iframe-section{padding-top: 48px;padding-bottom: 48px;}
+    .iframe-heading h2{padding-bottom: 20px;}
+    /* iframe section */
+
+    /* Lookbook section */
+    .lookbook{justify-content: space-between;}
+    .section1{padding-top: 48px;padding-bottom: 48px;}
+    .section2{margin-left: 167px;margin-top: 151px;}
+    .lookimg img{height: 64px;width: 64px;margin-right: 16px;}
+    .look-text h2{font-size: 22px;}
+    .look-text p{font-size: 15px;}
+    .lookbook-para{width: 456px;}
+    .contact-btn a{padding: 10px;border: 2px solid black;border-radius: 6px;text-decoration: none !important;}
+    /* Lookbook section */
+    .warning p{padding-top: 20px;font-size: 13px;}
+
+    /* Things section */
+
+    .thing{padding-bottom: 48px;padding-top: 48px;}
+    .thing-heading{padding-bottom: 20px;}
+    /* Things section */

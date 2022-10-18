@@ -1,0 +1,8 @@
+.try{position: relative;}
+.tryimg img{width: 100%;}
+.tryimg{position: relative;}
+.imgtxt h1{font-style: normal;font-weight: 700;font-size: 44px;line-height: 52px;}
+.imgtxt{left: 93px; display: flex;flex-direction: column; align-items: start; position: absolute;top: 153px;color: white;justify-content: start;}
+.learn{ margin-top: 40px; color: black;text-decoration: none;padding: 10px;background-color: white;border-radius: 5px;
+    display: inline-block;}
+.imgtxt p{max-width: 277px; width: 100%;text-align: start;}
