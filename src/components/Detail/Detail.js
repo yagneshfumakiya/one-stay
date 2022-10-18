@@ -286,7 +286,7 @@ const Detail = () => {
               <div className="detail1">
                 <div className="detail-para d-flex">
                   <p>
-                    <b>Cleanliness new </b>
+                    <b>Cleanliness new master </b>
                   </p>
                   &nbsp;&nbsp;&nbsp;&nbsp;
                   <i class="fa-regular fa-star"></i>
