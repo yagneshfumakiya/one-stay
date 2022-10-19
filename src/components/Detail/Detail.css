@@ -79,15 +79,72 @@
 
 
     /* review section */
-    
+    .review-main{max-width: 730px; justify-content: space-between;}
+    .detail-para.d-flex {
+        margin-bottom: 18px;
+    }
+    .person-name {
+        padding-left: 10px;
+    }
     .review-detail{padding-bottom: 48px;}
     .icon{margin-right: 16px;}
     .detail-para a{font-weight: bold;text-decoration: underline !important;}
-    .detail1 i{font-size: 24px;}
-    .detail2 i{font-size: 24px;}
-    
-    .review-heading{padding-bottom: 32px;}
+    .detail1 i {
+        font-size: 20px;
+    }
+        .review-heading{padding-bottom: 32px;}
+        .modal-backdrop.show {
+            opacity: .3;
+        }
+
     /* review section */
+
+    /* review detail section */
+    .image-name.d-flex {
+        max-width: 200px;
+        justify-content: start;
+    }
+    .img img{
+        border-radius: 25px;
+    }
+    .modal-btn{
+        border: none;
+        background: white;
+        text-decoration: underline;
+    }
+    .review-section{
+        max-width: 1120px;
+        justify-content: space-between;
+    }
+    .star1 {
+        padding-left: 30px;
+    }
+    .star3 {
+        padding-left: 50px;
+    }
+    .star5 {
+        padding-left: 5px;
+    }
+    .star6 {
+        padding-left: 26px;
+    }
+    /* review detail section */
+    /* review btn */
+    button.reviewbtn {
+        padding: 10px;
+        background: white;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+    /* review btn */
+    .modal-content {
+        padding: 20px;
+        max-height: 500px;
+        border-radius: 15px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin-top: 88px;
+    }
 
     /* iframe section */
     .iframe-section{padding-top: 48px;padding-bottom: 48px;}
@@ -95,9 +152,11 @@
     /* iframe section */
 
     /* Lookbook section */
-    .lookbook{justify-content: space-between;}
-    .section1{padding-top: 48px;padding-bottom: 48px;}
-    .section2{margin-left: 167px;margin-top: 151px;}
+    .lookbook{max-width: 1120px; justify-content: space-between !important;}
+    .section1{padding-top: 48px;padding-bottom: 48px;}  
+    .main2 {
+        padding-top: 48px;
+    }
     .lookimg img{height: 64px;width: 64px;margin-right: 16px;}
     .look-text h2{font-size: 22px;}
     .look-text p{font-size: 15px;}
@@ -105,6 +164,7 @@
     .contact-btn a{padding: 10px;border: 2px solid black;border-radius: 6px;text-decoration: none !important;}
     /* Lookbook section */
     .warning p{padding-top: 20px;font-size: 13px;}
+    /* .section2{padding-top: 47px;} */
 
     /* Things section */
 

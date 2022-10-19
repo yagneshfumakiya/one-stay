@@ -1,12 +1,19 @@
 import React, { useState } from "react";
-
 import Header1 from "../Header/Header1";
 import "./Detail.css";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import Iframe from "react-iframe";
 import Container from "react-bootstrap/Container";
-
+// import review1 from '../../images/review1.png';
+import h1 from "../../images/h1.png";
+import h2 from "../../images/h2.png";
+import h3 from "../../images/h3.png";
+import h4 from "../../images/h4.png";
+import h5 from "../../images/h5.png";
+import h6 from "../../images/h6.png";
+import h7 from "../../images/h7.png";
+import h8 from "../../images/h8.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import slider6 from "../../images/slider6.jpg";
@@ -23,6 +30,14 @@ import Slider from "@mui/material/Slider";
 
 const Detail = () => {
   const [show, setShow] = useState(false);
+  const [showm, setShowm] = useState(false);
+  const [showm1, setShowm1] = useState(false);
+  const [showm2, setShowm2] = useState(false);
+  const [showm3, setShowm3] = useState(false);
+  const [showm4, setShowm4] = useState(false);
+  const [showm5, setShowm5] = useState(false);
+  const [showm6, setShowm6] = useState(false);
+  const [showm7, setShowm7] = useState(false);
   const [date, setDate] = useState(new Date());
 
   const [value, setValue] = React.useState([null, null]);
@@ -270,7 +285,7 @@ const Detail = () => {
           <span className='bold'>Default selected date:</span>{' '}
           {date.toDateString()}
         </p>
-   dfdf   // )} */} 
+   dfdf   // )} */}
           {/* calender section */}
           {/* reviews section */}
           <div className="review">
@@ -286,88 +301,3363 @@ const Detail = () => {
               <div className="detail1">
                 <div className="detail-para d-flex">
                   <p>
-                    <b>Cleanliness new master </b>
+                    <b>Cleanliness</b>
                   </p>
                   &nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <div className="star1">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
                 </div>
               </div>
               <div className="detail1">
                 <div className="detail-para d-flex">
                   <p>
-                    <b>Cleanliness</b>
+                    <b>Communication</b>
                   </p>
                   &nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <div className="star2">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
                 </div>
               </div>
               <div className="detail1">
                 <div className="detail-para d-flex">
                   <p>
-                    <b>Cleanliness</b>
+                    <b>Check-in</b>
                   </p>
                   &nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <div className="star3">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
                 </div>
               </div>
-             
             </div>
             <div className="review-detail">
               <div className="detail1">
                 <div className="detail-para d-flex">
                   <p>
-                    <b>Cleanliness</b>
+                    <b>Accuracy</b>
                   </p>
                   &nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <div className="star4">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
                 </div>
               </div>
               <div className="detail1">
                 <div className="detail-para d-flex">
                   <p>
-                    <b>Cleanliness</b>
+                    <b>Location</b>
                   </p>
                   &nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <div className="star5">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
                 </div>
               </div>
               <div className="detail1">
                 <div className="detail-para d-flex">
                   <p>
-                    <b>Cleanliness</b>
+                    <b>Value </b>
                   </p>
                   &nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <div className="star6">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
                 </div>
               </div>
-            
             </div>
           </div>
+          <div className="review-person-main">
+            <div className="review-section d-flex">
+              <div className="person-div-1">
+                {/* person 1 */}
+                <div className="image-name d-flex">
+                  <div className="img">
+                    <img src={h1} alt="" height={40} width={40} />
+                  </div>
+                  <div className="person-name">
+                    <p>
+                      <b>Manthan Dave</b>
+                    </p>
+                    <p>June 2022</p>
+                  </div>
+                </div>
+                <div className="person-para">
+                  <p>
+                    A memorable experience with exceptional hospitality. The{" "}
+                    <br /> place is amazing for a weekend gateaway. It is in the
+                    outskirts <br /> of Nasik and very near to Sula. The place
+                    has all the fun...
+                  </p>
+                  <button className="modal-btn" onClick={() => setShowm(true)}>
+                    <b>Show More</b> &gt;{" "}
+                  </button>
+                  <Modal
+                    show={showm}
+                    onHide={() => setShowm(false)}
+                    dialogClassName="modal-110w"
+                    w={800}
+                    aria-labelledby="example-custom-modal-styling-title"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="example-custom-modal-styling-title">
+                        4.69 <i class="fa-solid fa-star"></i> 13 reviews
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <div className="modal-section">
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Paras Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Niraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Harsh Kansoda</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Ravi Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Mahir Vadiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h7} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Neel Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h8} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>jay sanghvi</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Yagnesh Fumakiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Gayatri Thanki</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Avani savaliya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dhiraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dinesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Hitesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </div>{" "}
+                <br />
+                <br />
+                {/* person 1 */}
+                {/* person 2 */}
+                <div className="image-name d-flex">
+                  <div className="img">
+                    <img src={h2} alt="" height={40} width={40} />
+                  </div>
+                  <div className="person-name">
+                    <p>
+                      <b>Paras Patel</b>
+                    </p>
+                    <p>June 2022</p>
+                  </div>
+                </div>
+                <div className="person-para">
+                  <p>
+                    A memorable experience with exceptional hospitality. The{" "}
+                    <br /> place is amazing for a weekend gateaway. It is in the
+                    outskirts <br /> of Nasik and very near to Sula. The place
+                    has all the fun...
+                  </p>
+                  <button className="modal-btn" onClick={() => setShowm1(true)}>
+                    <b>Show More</b> &gt;{" "}
+                  </button>
+                  <Modal
+                    show={showm1}
+                    onHide={() => setShowm1(false)}
+                    dialogClassName="modal-110w"
+                    w={800}
+                    aria-labelledby="example-custom-modal-styling-title"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="example-custom-modal-styling-title">
+                      4.69 <i class="fa-solid fa-star"></i> 13 reviews
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <div className="modal-section">
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Paras Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Niraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Harsh Kansoda</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Ravi Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Mahir Vadiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h7} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Neel Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h8} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>jay sanghvi</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Yagnesh Fumakiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Gayatri Thanki</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Avani savaliya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dhiraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dinesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Hitesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </div>
+                <br />
+                <br />
+                {/* person 2 */}
+                {/* person 3 */}
+                <div className="image-name d-flex">
+                  <div className="img">
+                    <img src={h3} alt="" height={40} width={40} />
+                  </div>
+                  <div className="person-name">
+                    <p>
+                      <b>Niraj Patel</b>
+                    </p>
+                    <p>June 2022</p>
+                  </div>
+                </div>
+                <div className="person-para">
+                  <p>
+                    A memorable experience with exceptional hospitality. The{" "}
+                    <br /> place is amazing for a weekend gateaway. It is in the
+                    outskirts <br /> of Nasik and very near to Sula. The place
+                    has all the fun...
+                  </p>
+                  <button className="modal-btn" onClick={() => setShowm2(true)}>
+                    <b>Show More</b> &gt;{" "}
+                  </button>
+                  <Modal
+                    show={showm2}
+                    onHide={() => setShowm2(false)}
+                    dialogClassName="modal-110w"
+                    w={800}
+                    aria-labelledby="example-custom-modal-styling-title"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="example-custom-modal-styling-title">
+                      4.69 <i class="fa-solid fa-star"></i> 13 reviews
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <div className="modal-section">
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Paras Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Niraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Harsh Kansoda</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Ravi Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Mahir Vadiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h7} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Neel Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h8} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>jay sanghvi</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Yagnesh Fumakiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Gayatri Thanki</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Avani savaliya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dhiraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dinesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Hitesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </div>
+                <br />
+                <br />
+                {/* person 3 */}
+                {/* person 4 */}
+                <div className="image-name d-flex">
+                  <div className="img">
+                    <img src={h4} alt="" height={40} width={40} />
+                  </div>
+                  <div className="person-name">
+                    <p>
+                      <b>Harsh Kansoda</b>
+                    </p>
+                    <p>June 2022</p>
+                  </div>
+                </div>
+                <div className="person-para">
+                  <p>
+                    A memorable experience with exceptional hospitality. The{" "}
+                    <br /> place is amazing for a weekend gateaway. It is in the
+                    outskirts <br /> of Nasik and very near to Sula. The place
+                    has all the fun...
+                  </p>
+                  <button className="modal-btn" onClick={() => setShowm3(true)}>
+                    <b>Show More</b> &gt;{" "}
+                  </button>
+                  <Modal
+                    show={showm3}
+                    onHide={() => setShowm3(false)}
+                    dialogClassName="modal-110w"
+                    w={800}
+                    aria-labelledby="example-custom-modal-styling-title"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="example-custom-modal-styling-title">
+                         4.69 <i class="fa-solid fa-star"></i> 13 reviews
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <div className="modal-section">
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Paras Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Niraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Harsh Kansoda</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Ravi Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Mahir Vadiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h7} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Neel Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h8} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>jay sanghvi</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Yagnesh Fumakiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Gayatri Thanki</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Avani savaliya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dhiraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dinesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Hitesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </div>
+                <br />
+                <br />
+                {/* person 4 */}
+              </div>
+              <div className="person-div-2">
+                {/* person 5 */}
+
+                <div className="image-name d-flex">
+                  <div className="img">
+                    <img src={h5} alt="" height={40} width={40} />
+                  </div>
+                  <div className="person-name">
+                    <p>
+                      <b>Ajay Kanzariya</b>
+                    </p>
+                    <p>June 2022</p>
+                  </div>
+                </div>
+                <div className="person-para">
+                  <p>
+                    A memorable experience with exceptional hospitality. The{" "}
+                    <br /> place is amazing for a weekend gateaway. It is in the
+                    outskirts <br /> of Nasik and very near to Sula. The place
+                    has all the fun...
+                  </p>
+                  <button className="modal-btn" onClick={() => setShowm4(true)}>
+                    <b>Show More</b> &gt;{" "}
+                  </button>
+                  <Modal
+                    show={showm4}
+                    onHide={() => setShowm4(false)}
+                    dialogClassName="modal-110w"
+                    w={800}
+                    aria-labelledby="example-custom-modal-styling-title"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="example-custom-modal-styling-title">
+                         4.69 <i class="fa-solid fa-star"></i> 13 reviews
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <div className="modal-section">
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Paras Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Niraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Harsh Kansoda</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Ravi Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Mahir Vadiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h7} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Neel Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h8} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>jay sanghvi</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Yagnesh Fumakiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Gayatri Thanki</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Avani savaliya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dhiraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dinesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Hitesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </div>
+                <br />
+                <br />
+                {/* person 5 */}
+                {/* person 6 */}
+
+                <div className="image-name d-flex">
+                  <div className="img">
+                    <img src={h6} alt="" height={40} width={40} />
+                  </div>
+                  <div className="person-name">
+                    <p>
+                      <b>Ravi Vyas</b>
+                    </p>
+                    <p>June 2022</p>
+                  </div>
+                </div>
+                <div className="person-para">
+                  <p>
+                    A memorable experience with exceptional hospitality. The{" "}
+                    <br /> place is amazing for a weekend gateaway. It is in the
+                    outskirts <br /> of Nasik and very near to Sula. The place
+                    has all the fun...
+                  </p>
+                  <button className="modal-btn" onClick={() => setShowm5(true)}>
+                    <b>Show More</b> &gt;{" "}
+                  </button>
+                  <Modal
+                    show={showm5}
+                    onHide={() => setShowm5(false)}
+                    dialogClassName="modal-110w"
+                    w={800}
+                    aria-labelledby="example-custom-modal-styling-title"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="example-custom-modal-styling-title">
+                         4.69 <i class="fa-solid fa-star"></i> 13 reviews
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <div className="modal-section">
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </div>
+                <br />
+                <br />
+                {/* person 6 */}
+                {/* person 7 */}
+
+                <div className="image-name d-flex">
+                  <div className="img">
+                    <img src={h7} alt="" height={40} width={40} />
+                  </div>
+                  <div className="person-name">
+                    <p>
+                      <b>Mahir Vadiya</b>
+                    </p>
+                    <p>June 2022</p>
+                  </div>
+                </div>
+                <div className="person-para">
+                  <p>
+                    A memorable experience with exceptional hospitality. The{" "}
+                    <br /> place is amazing for a weekend gateaway. It is in the
+                    outskirts <br /> of Nasik and very near to Sula. The place
+                    has all the fun...
+                  </p>
+                  <button className="modal-btn" onClick={() => setShowm6(true)}>
+                    <b>Show More</b> &gt;{" "}
+                  </button>
+                  <Modal
+                    show={showm6}
+                    onHide={() => setShowm6(false)}
+                    dialogClassName="modal-110w"
+                    w={800}
+                    aria-labelledby="example-custom-modal-styling-title"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="example-custom-modal-styling-title">
+                         4.69 <i class="fa-solid fa-star"></i> 13 reviews
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <div className="modal-section">
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Paras Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Niraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Harsh Kansoda</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Ravi Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Mahir Vadiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h7} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Neel Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h8} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>jay sanghvi</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Yagnesh Fumakiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Gayatri Thanki</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Avani savaliya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dhiraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dinesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Hitesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </div>
+                <br />
+                <br />
+                {/* person 7 */}
+
+                {/* person 8 */}
+                <div className="image-name d-flex">
+                  <div className="img">
+                    <img src={h8} alt="" height={40} width={40} />
+                  </div>
+                  <div className="person-name">
+                    <p>
+                      <b>Neel Vyas</b>
+                    </p>
+                    <p>June 2022</p>
+                  </div>
+                </div>
+                <div className="person-para">
+                  <p>
+                    A memorable experience with exceptional hospitality. The{" "}
+                    <br /> place is amazing for a weekend gateaway. It is in the
+                    outskirts <br /> of Nasik and very near to Sula. The place
+                    has all the fun...
+                  </p>
+                  <button className="modal-btn" onClick={() => setShowm6(true)}>
+                    <b>Show More</b> &gt;{" "}
+                  </button>
+                  <Modal
+                    show={showm6}
+                    onHide={() => setShowm6(false)}
+                    dialogClassName="modal-110w"
+                    w={800}
+                    aria-labelledby="example-custom-modal-styling-title"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="example-custom-modal-styling-title">
+                         4.69 <i class="fa-solid fa-star"></i> 13 reviews
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <div className="modal-section">
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Paras Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Niraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Harsh Kansoda</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Ravi Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Mahir Vadiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h7} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Neel Vyas</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h8} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>jay sanghvi</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Yagnesh Fumakiya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h2} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Gayatri Thanki</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h3} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Avani savaliya</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h4} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dhiraj Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h5} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Dinesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h6} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Hitesh Patel</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </Modal.Body>
+                  </Modal>
+                </div>
+                {/* person 8 */}
+              </div>
+            </div>
+          </div>
+          {/* review button */}
+          <button className="reviewbtn" onClick={() => setShowm7(true)}>
+            Show all 13 reviews
+          </button>
+          <Modal
+            show={showm7}
+            onHide={() => setShowm7(false)}
+            dialogClassName="modal-110w"
+            w={800}
+            aria-labelledby="example-custom-modal-styling-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="example-custom-modal-styling-title">
+                 4.69 <i class="fa-solid fa-star"></i> 13 reviews
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+            <div className="modal-section">
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                        <br />
+                        <div className="modal-general-section">
+                          <div className="image-name d-flex">
+                            <div className="img">
+                              <img src={h1} alt="" height={40} width={40} />
+                            </div>
+                            <div className="person-name">
+                              <p>
+                                <b>Manthan Dave</b>
+                              </p>
+                              <p>June 2022</p>
+                            </div>
+                          </div>
+                          <br />
+                          <div className="comments">
+                            <p>
+                              A memorable experience with exceptional
+                              hospitality. The place is amazing for a weekend
+                              gateaway. It is in the outskirts of Nasik and very
+                              near to Sula. The place has all the fun...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+            </Modal.Body>
+          </Modal>
           <hr />
+          {/* review button */}
           {/* reviews section */}
 
           {/* iframe section */}
@@ -389,7 +3679,7 @@ const Detail = () => {
           </div>
           {/* iframe section */}
           {/* Lookbook section */}
-          <div className="lookbook d-flex">
+          <div className="lookbook ">
             <div className="section1">
               <div className="lookbook-detail d-flex">
                 <div className="lookimg">
