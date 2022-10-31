@@ -3654,7 +3654,7 @@ const Detail = () => {
                           </div>
                         </div>
                       </div>
-            </Modal.Body>
+                                  </Modal.Body>
           </Modal>
           <hr />
           {/* review button */}

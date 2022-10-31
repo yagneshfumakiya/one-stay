@@ -1,0 +1,53 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+.main-box.d-flex {
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+.host-section{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 81px 0px !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 155px 0px;
+    
+    
+}
+
+.video-section {
+    width: 100%;
+}
+
+button.host-btn {
+    padding: 11px 26px;
+    border-radius: 10px;
+    color: white;
+    background: #f73254;
+    font-weight: 500;
+}   
+
+h1.host-heading {
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 18px;
+}
+a.host-btn {
+    text-decoration: none;
+    padding: 9px 23px;
+    background: #ff3356;
+    border-radius: 9px;
+    color: white;
+    font-weight: 500;
+}
+.host-h5{
+    padding-bottom: 10px;
+}

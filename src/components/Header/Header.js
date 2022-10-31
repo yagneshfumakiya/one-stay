@@ -16,13 +16,14 @@ import banner from "../../images/banner-img.png";
 import logo from "../../images/logo.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import "./Header.css";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
 import Login from "../Login/Login";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 import { login } from "../../features/userSlice";
+import {logout} from "../../features/userSlice"
 import { useDispatch } from "react-redux";
 const data = {
   countries: [
@@ -276,6 +277,7 @@ const Header = () => {
   const [showp, setShowp] = useState(false);
   const [show, setShow] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState("");
+  const [data,setData]=useState([])
 
   const [number, setNumber] = useState("");
   const [value, setValue] = useState("");
@@ -289,7 +291,7 @@ const Header = () => {
   const handleClosep = () => setShowp(false);
   const handleShowp = () => setShowp(true);
 
-  const availableState = data.countries.find((c) => c.name === selectedCountry);
+  
 
   function handleSubmit() {
     console.log({ username, fullname, email, password, birthdate, phone });
@@ -306,12 +308,12 @@ const Header = () => {
       result.json().then((resp) => {
         console.log("resp", resp);
         const myresp = resp;
-        localStorage.setItem("myrespkey", JSON.stringify(myresp));
+        // localStorage.setItem("myrespkey", JSON.stringify(myresp));
         /// localStorage.getItem('myresp')
         // localStorage.setItem("resp",resp)
-        {
+        
           myresp ? handleClosep() : handleShowp();
-        } 
+        
       });
     });
   }
@@ -332,6 +334,8 @@ const Header = () => {
         const myresp = resp;
         localStorage.setItem("myrespkey", JSON.stringify(myresp));
 
+        handleClose()
+
         // {
         //   myresp ? handleClosep() : handleShowp();
         // }
@@ -350,6 +354,24 @@ const Header = () => {
     // let navigate = useNavigate();
     // navigate(-1)
   }
+  
+  const handleLogout=()=>{
+    
+    fetch("https://onestay.3waytech.co/api/logout").then((result)=>{
+      console.log(result)
+      result.json().then((resp)=>{
+
+        // setData(resp)
+      })
+    })
+    dispatch(logout)
+    localStorage.clear();
+  }
+
+
+
+
+
   return (
     <div>
       <div className="bgimg">
@@ -380,9 +402,9 @@ const Header = () => {
                 </div>
                 <div className="toggle-menu-side">
                   <div className="host">
-                    <a href="#">
+                    <Link to='/hostpage1'>
                       Become a Host <i className="fa-solid fa-globe"></i>
-                    </a>
+                    </Link>
                   </div>
                   <div className="toggle-profile">
                     {/* <i className="fa-solid fa-grip-lines" onClick={dropDown()}></i>
@@ -394,15 +416,26 @@ const Header = () => {
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
-                        <Dropdown.Item>
-                          {/* <a href="/Login">Sing up</a> */}
-                          {/* <Link to={Login}>Sing up</Link> */}
-                        </Dropdown.Item>
-
-                        <Dropdown.Item onClick={handleShow}>
+                        {localStorage.getItem('myrespkey')?<Dropdown.Item onClick={handleLogout}>
+                          Logout
+                        </Dropdown.Item>: <><Dropdown.Item onClick={handleShow}>
                           Log In
-                        </Dropdown.Item>
+                        </Dropdown.Item><Dropdown.Item onClick={handleShowp}>
+                          {/* <Dropdown.Item onClick='/register> */}
+                          Sign up
+                        </Dropdown.Item></>}
+                        
+
+                       
                         {/* Login popup */}
+                        
+                        <Dropdown.Item href="#/action-3">
+                          Host Your Home
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">
+                          Host an experience
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Help</Dropdown.Item>
                         <Modal
                           show={show}
                           onHide={handleClose}
@@ -413,7 +446,7 @@ const Header = () => {
                           </Modal.Header>
                           <Modal.Title>Welcome to Airbnb</Modal.Title>
                           <Modal.Body>
-                            <div className="lable">country/Region</div>
+                            {/* <div className="lable">country/Region</div>
 
                             <PhoneInput
                               international
@@ -438,7 +471,7 @@ const Header = () => {
                               <span id="message" style={{ color: "red" }}>
                                 Invalid Phone Number
                               </span>
-                            )}
+                            )} */}
                             <Form>
                               <Form.Group
                                 className="mb-3"
@@ -468,10 +501,10 @@ const Header = () => {
                                 className="mb-3"
                                 controlId="formBasicCheckbox"
                               >
-                                <Form.Check
+                                {/* <Form.Check
                                   type="checkbox"
                                   label="Check me out"
-                                />
+                                /> */}
                               </Form.Group>
                             </Form>
                           </Modal.Body>
@@ -515,10 +548,7 @@ const Header = () => {
                         </Modal>
                         {/* Login popup */}
                         {/* Sign up popup */}
-                        <Dropdown.Item onClick={handleShowp}>
-                          {/* <Dropdown.Item onClick='/register> */}
-                          Sign up
-                        </Dropdown.Item>
+                        
                         <Modal
                           show={showp}
                           onHide={handleClosep}
@@ -641,15 +671,10 @@ const Header = () => {
 
                         <hr />
                         <br />
-                        <Dropdown.Item href="#/action-3">
-                          Host Your Home
-                        </Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">
-                          Host an experience
-                        </Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Help</Dropdown.Item>
+                      
                       </Dropdown.Menu>
                     </Dropdown>
+
                   </div>
                 </div>
               </div>

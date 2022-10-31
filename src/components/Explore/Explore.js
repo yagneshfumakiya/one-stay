@@ -21,7 +21,7 @@ const Explore = () => {
   
   const [data,setData]=useState([])
   useEffect(()=>{
-    fetch("http://192.168.29.173:8000/api/room_list").then((result)=>{
+    fetch("https://onestay.3waytech.co/api/room_list").then((result)=>{
       result.json().then((resp)=>{
         setData(resp)
       })
