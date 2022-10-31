@@ -1,4 +1,3 @@
-import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import { Link, Navigate } from "react-router-dom";
@@ -9,7 +8,6 @@ import PhoneInput, {
   formatPhoneNumberIntl,
   isValidPhoneNumber,
 } from "react-phone-number-input";
-// import PhoneInput from "react-phone-input-2";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import banner from "../../images/banner-img.png";
@@ -294,7 +292,7 @@ const Header = () => {
   
 
   function handleSubmit() {
-    console.log({ username, fullname, email, password, birthdate, phone });
+    // console.log({ username, fullname, email, password, birthdate, phone });
     let data = { username, fullname, email, password, birthdate, phone };
     fetch("http://192.168.29.173:8000/api/signup", {
       method: "POST",
@@ -304,16 +302,10 @@ const Header = () => {
       },
       body: JSON.stringify(data),
     }).then((result) => {
-      // console.log('result',result)
       result.json().then((resp) => {
         console.log("resp", resp);
         const myresp = resp;
-        // localStorage.setItem("myrespkey", JSON.stringify(myresp));
-        /// localStorage.getItem('myresp')
-        // localStorage.setItem("resp",resp)
-        
           myresp ? handleClosep() : handleShowp();
-        
       });
     });
   }
@@ -336,12 +328,6 @@ const Header = () => {
 
         handleClose()
 
-        // {
-        //   myresp ? handleClosep() : handleShowp();
-        // }
-        /// localStorage.getItem('myresp')
-        // localStorage.setItem("resp",resp)
-        
       });
     });
     dispatch(login({
@@ -351,8 +337,7 @@ const Header = () => {
       loggedIn:true,
 
   }))
-    // let navigate = useNavigate();
-    // navigate(-1)
+    
   }
   
   const handleLogout=()=>{
@@ -407,8 +392,7 @@ const Header = () => {
                     </Link>
                   </div>
                   <div className="toggle-profile">
-                    {/* <i className="fa-solid fa-grip-lines" onClick={dropDown()}></i>
-                    <i className="fa-regular fa-user" onClick={dropDown()}></i> */}
+                   
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic" variant="white">
                         <i className="fa-solid fa-grip-lines"></i>
@@ -421,7 +405,7 @@ const Header = () => {
                         </Dropdown.Item>: <><Dropdown.Item onClick={handleShow}>
                           Log In
                         </Dropdown.Item><Dropdown.Item onClick={handleShowp}>
-                          {/* <Dropdown.Item onClick='/register> */}
+                    
                           Sign up
                         </Dropdown.Item></>}
                         
@@ -446,32 +430,6 @@ const Header = () => {
                           </Modal.Header>
                           <Modal.Title>Welcome to Airbnb</Modal.Title>
                           <Modal.Body>
-                            {/* <div className="lable">country/Region</div>
-
-                            <PhoneInput
-                              international
-                              placeholder="Enter phone number"
-                              value={value}
-                              onChange={setValue}
-                              onClick={(e) =>
-                                setSelectedCountry(e.target.value)
-                              }
-                              error={
-                                value
-                                  ? isValidPhoneNumber(value)
-                                    ? undefined
-                                    : "Invalid Phone Number"
-                                  : "Phone number requireds"
-                              }
-                            />
-
-                            {value && isValidPhoneNumber(value) ? (
-                              ""
-                            ) : (
-                              <span id="message" style={{ color: "red" }}>
-                                Invalid Phone Number
-                              </span>
-                            )} */}
                             <Form>
                               <Form.Group
                                 className="mb-3"
@@ -639,33 +597,7 @@ const Header = () => {
                           </Button> */}
                           </div>
 
-                          {/* <div className="or">or</div>
-                          <div className="box">
-                            <div className="social-box">
-                              <a href="">
-                                <i class="fa-brands fa-facebook"></i> Continue
-                                With Facebook
-                              </a>
-                            </div>
-                            <div className="social-box">
-                              <a href="">
-                                <i class="fa-brands fa-google"></i> Continue
-                                With Google
-                              </a>
-                            </div>
-                            <div className="social-box">
-                              <a href="">
-                                <i class="fa-brands fa-apple"></i> Continue With
-                                Apple
-                              </a>
-                            </div>
-                            <div className="social-box">
-                              <a href="">
-                                <i class="fa-regular fa-envelope"></i>Continue
-                                With Email
-                              </a>
-                            </div>
-                          </div> */}
+                         
                         </Modal>
                         {/* Sign up popup */}
 
@@ -682,235 +614,6 @@ const Header = () => {
           </Row>
         </Container>
       </div>
-
-      {/* <div className="floating-searchbar">
-        <Container>
-          <div className="floating-searchbox-content">
-            <div className="row">
-              <Col lg={3} md={3} sm={6} col={12}>
-                <a href="">
-                  <div className="floating-searchbox border-right d-flex align-items-start justify-content-start flex-column">
-                    <h6>Location</h6>
-                    <p>Where are you going?</p>
-                  </div>
-                </a>
-              </Col>
-              <Col lg={3} md={3} sm={6} col={12}>
-                <a href="#">
-                  <div className="floating-searchbox border-right d-flex align-items-start justify-content-start flex-column">
-                    <h6>Check in</h6>
-                    <p>Add dates</p>
-                  </div>
-                </a>
-              </Col>
-              <Col lg={3} md={3} sm={6} col={12}>
-                <a href="">
-                  <div className="floating-searchbox border-right d-flex align-items-start justify-content-start flex-column">
-                    <h6>Check out</h6>
-                    <p>Add dates</p>
-                  </div>
-                </a>
-              </Col>
-              <Col lg={3} md={3} sm={6} col={12}>
-                <a href="">
-                  <div className="floating-searchbox d-flex align-items-center justify-content-between">
-                    <div className="floating-searchbox-last">
-                      <h6>Guests</h6>
-                      <p>Add guests</p>
-                    </div>
-                    <div className="search-button">
-                      <i className="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                  </div>
-                </a>
-              </Col>
-            </div>
-          </div>
-        </Container>
-        <div className="banner-content">
-          <h5>Not sure where to go?Perfect</h5>
-          <a href="#" className="flexible">
-            I’m flexible
-          </a>
-        </div>
-      </div> */}
-
-      {/* section 2 start from here */}
-
-      {/* <Container>
-        <div className="section2 d-flex">
-          <div className="section2-heading">
-            <h1>Explore nearby</h1>
-          </div>
-        </div>
-        <div className="row">
-          <Col lg={3} md={3} sm={6} col={12}>
-            <div className="losanglese d-flex align-items-center">
-              <div className="img1 ">
-                <img src={LosAngeles1} alt="" />
-              </div>
-              <a href="">
-                <div className="Los-Angeles-txt">
-                  <h6>Los Angeles</h6>
-                  <p>15 minute drive</p>
-                </div>
-              </a>
-            </div>
-          </Col>
-          <Col lg={3} md={3} sm={6} col={12}>
-            <div className="losanglese d-flex align-items-center">
-              <div className="img1 ">
-                <img src={LosAngeles1} alt="" />
-              </div>
-              <a href="">
-                <div className="Los-Angeles-txt">
-                  <h6>Los Angeles</h6>
-                  <p>15 minute drive</p>
-                </div>
-              </a>
-            </div>
-          </Col>
-          <Col lg={3} md={3} sm={6} col={12}>
-            <div className="losanglese d-flex align-items-center">
-              <div className="img1 ">
-                <img src={LosAngeles1} alt="" />
-              </div>
-              <a href="">
-                <div className="Los-Angeles-txt">
-                  <h6>Los Angeles</h6>
-                  <p>15 minute drive</p>
-                </div>
-              </a>
-            </div>
-          </Col>
-          <Col lg={3} md={3} sm={6} col={12}>
-            <div className="losanglese d-flex align-items-center">
-              <div className="img1 ">
-                <img src={LosAngeles1} alt="" />
-              </div>
-              <a href="">
-                <div className="Los-Angeles-txt">
-                  <h6>Los Angeles</h6>
-                  <p>15 minute drive</p>
-                </div>
-              </a>
-            </div>
-          </Col>
-          <Col lg={3} md={3} sm={6} col={12}>
-            <div className="losanglese d-flex align-items-center">
-              <div className="img1 ">
-                <img src={LosAngeles1} alt="" />
-              </div>
-              <a href="">
-                <div className="Los-Angeles-txt">
-                  <h6>Los Angeles</h6>
-                  <p>15 minute drive</p>
-                </div>
-              </a>
-            </div>
-          </Col>
-          <Col lg={3} md={3} sm={6} col={12}>
-            <div className="losanglese d-flex align-items-center">
-              <div className="img1 ">
-                <img src={LosAngeles1} alt="" />
-              </div>
-              <a href="">
-                <div className="Los-Angeles-txt">
-                  <h6>Los Angeles</h6>
-                  <p>15 minute drive</p>
-                </div>
-              </a>
-            </div>
-          </Col>
-          <Col lg={3} md={3} sm={6} col={12}>
-            <div className="losanglese d-flex align-items-center">
-              <div className="img1 ">
-                <img src={LosAngeles1} alt="" />
-              </div>
-              <a href="">
-                <div className="Los-Angeles-txt">
-                  <h6>Los Angeles</h6>
-                  <p>15 minute drive</p>
-                </div>
-              </a>
-            </div>
-          </Col>
-          <Col lg={3} md={3} sm={6} col={12}>
-            <div className="losanglese d-flex align-items-center">
-              <div className="img1 ">
-                <img src={LosAngeles1} alt="" />
-              </div>
-              <a href="">
-                <div className="Los-Angeles-txt">
-                  <h6>Los Angeles</h6>
-                  <p>15 minute drive</p>
-                </div>
-              </a>
-            </div>
-          </Col>
-        </div>
-      </Container> */}
-
-      {/* section 3 start from here */}
-
-      {/* <Container>
-        <div className="section3">
-          <div className="section3-heading d-flex justify-content-between w-100">
-            <h2>Be a Host to Afghan refugees</h2>
-            <div className="section3-detail d-flex flex-column justify-content-start align-items-start">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
-                aliquam vitae mi eget risus. A sagittis vitae dignissim lorem
-                vestibulum vel.Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Commodo aliquam vitae mi eget risus. A sagittis
-                vitae dignissim lorem vestibulum vel.Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Commodo aliquam vitae mi eget
-                risus. A sagittis vitae dignissim lorem vestibulum vel.
-              </p>
-              <a href="#" className="section3-btn">
-                Learn More At Airbnb.org
-              </a>
-            </div>
-          </div>
-        </div>
-      </Container> */}
-
-      {/* <div className="header-menu">
-                <ul>
-                  <li><a href="#">Places to stay</a></li>
-                  <li><a href="#">Places to stay</a></li>
-                  <li><a href="#">Places to stay</a></li>
-                </ul>
-              </div> */}
-      {/* <div className="container">
-          <div className="row">
-            <div className="col-lg-4">
-              <div className="logo">
-                <img src={logo} alt="" />
-              </div>
-
-            </div>
-            <div className="col-lg-8">
-              <div className="header-menu">
-                <ul>
-                  <li><a href="#">Places to stay</a></li>
-                  <li><a href="#">Places to stay</a></li>
-                  <li><a href="#">Places to stay</a></li>
-                </ul>
-              </div>
-              <div className="toggle-side">
-                <a href="#">Become a Host</a>
-                <i className="fa-solid fa-globe"></i>
-              </div>
-              <div className="toggle-button">
-              <i className="fa-solid fa-grip-lines"></i>
-              <i className="fa-regular fa-user"></i>
-              </div>
-
-            </div>
-
-          </div>
-        </div> */}
     </div>
   );
 };

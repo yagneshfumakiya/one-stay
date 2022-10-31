@@ -94,7 +94,12 @@ const Explore = () => {
                             <div className="detail-content">
                               <b>{item.address}</b>
                               <p>{item.description}</p>
-                              <p>{item.check_in} - {item.check_out}</p>
+                              {item.blocked_date[0] && (
+                              <p>
+                                {item.blocked_date[0].start_date} -{" "}
+                                {item.blocked_date[0].end_date}
+                              </p>
+                            )}
                               <p>
                                 <b>{item.price}</b> / night
                               </p>

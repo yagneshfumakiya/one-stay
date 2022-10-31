@@ -11,7 +11,6 @@ const Hostpage1 = () => {
     <div className="main-box d-flex">
       <div className="host-section d-flex">
         <h1 className="host-heading">Open your door to hosting</h1>
-        {/* <button  className="host-btn">Try hosting</button> */}
         <Link to='/hostpage2' className="host-btn">Try hosting</Link>
       </div>
       <div className="video-section">

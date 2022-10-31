@@ -7,7 +7,6 @@ const Hostpage1a = () => {
   return (
   
     <div className="main-div d-flex">
-      {console.log("Yagnesh Select the flat ")}
       <div className="main-section1">
         <h1>What kind of place will you host?</h1>
       </div>
@@ -45,24 +44,6 @@ const Hostpage1a = () => {
               <h4>A shared room</h4>
             </Link>
           </div>
-          {/* <div className="town hover">
-            <Link to="#" className="town1">
-              <h4>Serviced Apartment</h4>
-              <h6>Lorem ipsum, dolor sit amet consectetur </h6>
-            </Link>
-          </div>
-          <div className="cottage hover">
-            <Link to="#" className="conttage1">
-              <h4>Casa Particular</h4>
-              <h6>Lorem ipsum, dolor sit amet consectetur </h6>
-            </Link>
-          </div>
-          <div className="bungalow hover">
-            <Link to="#" className="bungalow1">
-              <h4>Holiday Home</h4>
-              <h6>Lorem ipsum, dolor sit amet consectetur </h6>
-            </Link>
-          </div> */}
         </div>
       </div>
     </div>

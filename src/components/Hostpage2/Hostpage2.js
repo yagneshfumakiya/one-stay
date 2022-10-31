@@ -16,7 +16,6 @@ const Hostpage2 = () => {
         <h1 className="host-heading">Become a Host in 10 easy steps</h1>
         <h5 className="host-h5">Join us. We'll help you every step of the way.</h5>
         <Link to='/hostpage3' className="host-btn">Let's Go</Link>
-        {/* <button className="host-btn">Try hosting</button> */}
       </div>
     </div>
     <Footer/>

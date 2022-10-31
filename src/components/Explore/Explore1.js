@@ -12,7 +12,6 @@ import slider3 from "../images/slider3.jpg";
 import slider4 from "../images/slider4.jpg";
 import slider5 from "../images/slider5.jpg";
 import Sea from "../images/Sea.png";
-// import "./data/profile.json";
 
 const Explore1 = (props) => {
   return (

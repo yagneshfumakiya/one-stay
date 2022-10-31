@@ -6,7 +6,6 @@ import TextField from "@mui/material/TextField";
 const Boutique = () => {
   return (
     <div className="main-div d-flex">
-       {console.log("yagnesh select the Boutique")}
       <div className="main-section1">
         <h1>What kind of place will you host?</h1>
       </div>

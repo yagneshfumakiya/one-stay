@@ -21,14 +21,15 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 const ImageList = () => {
-  const handleClose = () => {window.location.reload(false);};
   const [index, setIndex] = useState(0);
-
+  
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
   const [lgShow, setLgShow] = useState('');
+  const handleClose = () => {setLgShow(false);};
   return (
+    <>
     <Container
       style={{ maxWidth: "1034px" }}
       data-fancybox
@@ -163,98 +164,76 @@ const ImageList = () => {
 
       {/* section11 */}
 
-      {/* <Container className="d-flex"> */}
-        {/* <ReactFancyBox
-          thumbnail="https://loremflickr.com/320/240"
-          image={boatview1}/>
-       */}
-        {/* <div className="gallery">
-          <a data-fancybox="gallery" href={boatview1}>
-            <img src={boatview1} alt="image" />
-          </a>
-        </div>
-        <div className="gallery">
-          <a data-fancybox="gallery" href={vollayball1}>
-            <img src={vollayball1} alt="image" />
-          </a>
-        </div>
-        <div className="gallery">
-          <a data-fancybox="gallery" href={boatview1}>
-            <img src={boatview1} alt="image" />
-          </a>
-        </div>
-        <div className="gallery">
-          <a data-fancybox="gallery" href={vollayball1}>
-            <img src={vollayball1} alt="image" />
-          </a>
-        </div> */}
+      
       {/* </Container> */}
-      <Modal
-        size="lg"
-        show={lgShow}
-        aria-labelledby="example-modal-sizes-title-lg"
-      >
-        <Modal.Header closeButton onHide={handleClose}>
-          <Modal.Title id="example-modal-sizes-title-lg">
-            Photos {index}
-          </Modal.Title>
-          {/* <Button onClick={()=>setLgShow(false)}>X</Button> */}
-        </Modal.Header>
-        <Modal.Body>
-          <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-            <Carousel.Item>
-              <img className="d-block w-100" src={slider6} alt="First slide" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="d-block w-100" src={slider7} alt="Second slide" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={vollayball1}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={vollayball2}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={bathroom3}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={boatview1}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="d-block w-100" src={h1} alt="Third slide" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="d-block w-100" src={h2} alt="Third slide" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="d-block w-100" src={h3} alt="Third slide" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="d-block w-100" src={h4} alt="Third slide" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="d-block w-100" src={h5} alt="Third slide" />
-            </Carousel.Item>
-          </Carousel>
-        </Modal.Body>
-      </Modal>
-    </Container>
+          </Container>
+          <Modal
+          size="lg"
+          show={lgShow}
+          aria-labelledby="example-modal-sizes-title-lg"
+        >
+          <Modal.Header closeButton onClick={handleClose}>
+            <Modal.Title id="example-modal-sizes-title-lg">
+              Photos {index+1}
+            </Modal.Title>
+            {/* <Button onClick={()=>setLgShow(false)}>X</Button> */}
+          </Modal.Header>
+          <Modal.Body>
+            <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
+              <Carousel.Item>
+                <img className="d-block w-100" src={slider6} alt="First slide" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={slider7} alt="Second slide" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={vollayball1}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={vollayball2}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={bathroom3}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={boatview1}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={h1} alt="Third slide" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={h2} alt="Third slide" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={h3} alt="Third slide" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={h4} alt="Third slide" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={h5} alt="Third slide" />
+              </Carousel.Item>
+            </Carousel>
+          </Modal.Body>
+        </Modal>
+        </>
+  
   );
 };
 

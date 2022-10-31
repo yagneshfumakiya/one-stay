@@ -50,8 +50,7 @@ const Header1 = () => {
                   </a>
                 </div>
                 <div className="toggle-profile">
-                  {/* <i className="fa-solid fa-grip-lines" onClick={dropDown()}></i>
-                    <i className="fa-regular fa-user" onClick={dropDown()}></i> */}
+                  
                   <Dropdown>
                     <Dropdown.Toggle id="dropdown-basic" variant="white">
                       <i className="fa-solid fa-grip-lines"></i>
@@ -60,8 +59,7 @@ const Header1 = () => {
 
                     <Dropdown.Menu>
                       <Dropdown.Item>
-                        {/* <a href="/Login">Sing up</a> */}
-                        {/* <Link to={Login}>Sing up</Link> */}
+                       
                       </Dropdown.Item>
                       <Dropdown.Item onClick={handleShow}>Log In</Dropdown.Item>
                       <Modal show={show} onHide={handleClose} className="modal">

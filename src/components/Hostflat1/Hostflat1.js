@@ -7,7 +7,6 @@ const Hostflat1 = () => {
   return (
   
     <div className="main-div d-flex">
-      {console.log("Yagnesh Select the flat ")}
       <div className="main-section1">
         <h1>What kind of place will you host?</h1>
       </div>

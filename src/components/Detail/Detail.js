@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import Header1 from "../Header/Header1";
+import Header from "../Header/Header";
 import "./Detail.css";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import Iframe from "react-iframe";
 import Container from "react-bootstrap/Container";
-// import review1 from '../../images/review1.png';
 import h1 from "../../images/h1.png";
 import h2 from "../../images/h2.png";
 import h3 from "../../images/h3.png";
@@ -45,7 +44,7 @@ const Detail = () => {
   return (
     <>
       <div>
-        <Header1 />
+        <Header />
       </div>
       {/* section 1 start */}
       <Container className="container1">
@@ -266,26 +265,7 @@ const Detail = () => {
             </LocalizationProvider>
           </div>
 
-          {/* <div className='calendar-container'>
-        <Calendar
-          onChange={setDate}
-          selectRange={true}
-          defaultValue={date}                                                     
-        />
-      </div>
-      {date.length > 0 ? (
-        <p className='text-center'>
-          <span className='bold'>Start:</span>{' '}
-          {date[0].toDateString()}
-          &nbsp;|&nbsp;
-          <span className='bold'>End:</span> {date[1].toDateString()}
-        </p>
-      ) : (
-        <p className='text-center'>
-          <span className='bold'>Default selected date:</span>{' '}
-          {date.toDateString()}
-        </p>
-   dfdf   // )} */}
+
           {/* calender section */}
           {/* reviews section */}
           <div className="review">
